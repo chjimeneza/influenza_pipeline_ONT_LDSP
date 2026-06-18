@@ -1,0 +1,42 @@
+name: ont_pipeline_all_in_one
+
+# NOTE: This is a reference file only.
+# The pipeline now uses three separate environments to avoid conflicts:
+# - pod5_env.yml (core bioinformatics)
+# - nanoplot_env.yml (QC visualization)
+# - nextclade_env.yml (phylogenetics)
+#
+# Create these three environments instead:
+# conda env create -f pod5_env.yml
+# conda env create -f nanoplot_env.yml
+# conda env create -f nextclade_env.yml
+
+channels:
+  - nanoporetech
+  - bioconda
+  - conda-forge
+
+dependencies:
+  - python=3.10
+
+  # ONT
+  - pod5=0.3.23
+
+  # Alignment
+  - minimap2=2.28
+  - samtools=1.20
+  - bcftools=1.20
+  - bedtools=2.31.1
+
+  # Typing
+  - nextclade=3.17.0
+
+  # Utilities
+  - seqkit
+  - pigz
+  - parallel
+
+  # Python scientific stack
+  - pandas
+  - numpy
+  - matplotlib

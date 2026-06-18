@@ -12,6 +12,11 @@ refs_by_barcode/
 *.log
 *.tmp
 
+# Sample/generated output artifacts
+barcode11_combined.fastq
+consensus_irma.fasta
+depth.txt
+
 # Checkpoints and temporary files
 .checkpoints/
 .temp_dorado_model-*
