@@ -1,0 +1,26 @@
+# Large generated outputs
+ont_pipeline_results/
+nanoplot_results/
+nextclade_results/
+remap_results/
+refs_by_barcode/
+*.bam
+*.bai
+*.fastq
+*.fastq.gz
+*.pod5
+*.log
+*.tmp
+
+# Checkpoints and temporary files
+.checkpoints/
+.temp_dorado_model-*
+
+# OS/editor noise
+.DS_Store
+.vscode/
+
+# Optional local data
+22052026_FLU/
+23042026_INFLU/
+20260522_1045_MD-103782_FBE93093_bb6c31d2/

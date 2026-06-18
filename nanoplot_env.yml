@@ -1,0 +1,9 @@
+name: nanoplot_clean
+
+channels:
+  - bioconda
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - nanoplot>=1.40
